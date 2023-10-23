@@ -39,7 +39,6 @@
         android:layout_height="500dp"
         android:orientation="vertical"
         android:padding="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView">
@@ -58,14 +57,14 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="12dp"
+            android:autofillHints=""
             android:background="@drawable/edittext_background"
             android:ems="10"
             android:hint="@string/masukkan_email_anda"
             android:inputType="text"
             android:padding="12dp"
             android:textColor="#707070"
-            android:textSize="18sp"
-            android:autofillHints="" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView6"
@@ -82,22 +81,14 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="12dp"
+            android:autofillHints=""
             android:background="@drawable/edittext_background"
             android:ems="10"
             android:hint="@string/masukkan_password_anda"
             android:inputType="textPassword"
             android:padding="12dp"
             android:textColor="#707070"
-            android:textSize="18sp"
-            android:autofillHints="" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Belum Punya Akun? Buat Sekarang!"
-            android:textAlignment="center"
-            android:layout_marginTop="32dp"/>
+            android:textSize="18sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -109,8 +100,8 @@
                 android:id="@+id/view"
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
-                android:layout_weight="1"
                 android:layout_gravity="center_vertical"
+                android:layout_weight="1"
                 android:background="#707070" />
 
             <TextView
@@ -125,16 +116,16 @@
                 android:id="@+id/view2"
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                android:background="#707070"
-                android:layout_gravity="center_vertical"/>
+                android:background="#707070" />
         </LinearLayout>
 
         <LinearLayout
-            android:baselineAligned="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:baselineAligned="true"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -195,17 +186,18 @@
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button2"
+            style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="17dp"
             android:background="@color/greenngulik"
-            style="@android:style/Widget.Button"
+            android:text="@string/login2"
             android:textColor="#ffffff"
             android:textSize="25sp"
-            android:textStyle="bold"
-            android:text="@string/login2" />
+            android:textStyle="bold" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
