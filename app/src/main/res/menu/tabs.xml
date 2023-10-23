@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_home"
+        android:icon="@drawable/outline_home_24"
+        android:title="@string/Home">
+    </item>
+
+    <item
+        android:id="@+id/tab_alarm"
+        android:icon="@drawable/baseline_star_rate_24"
+        android:title="Rating">
+    </item>
+
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/baseline_insert_drive_file_24"
+        android:title="@string/Pengajuan">
+    </item>
+
+    <item
+        android:id="@+id/monitorheart"
+        android:icon="@drawable/baseline_monitor_heart_24"
+        android:title="@string/HealthCare">
+    </item>
+</menu>

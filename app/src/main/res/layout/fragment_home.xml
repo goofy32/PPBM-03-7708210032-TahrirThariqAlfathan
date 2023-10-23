@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    tools:context=".HomeFragment"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/linear23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="186dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/mari_mencari_spesialis_anda"
+            android:textSize="25sp"
+            android:textColor="@color/greenngulik"
+            android:textStyle="bold"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileimage"
+            android:layout_width="50dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="90dp"
+            android:src="@drawable/profile"
+            app:civ_border_color="#FF000000"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edittext32"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/linear23"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext_background"
+        android:hint="  Cari dokter anda"
+        android:inputType="text"
+        android:textColorHint="#78909C" />
+
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext32"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/kategori"
+        android:textColor="@color/greenngulik"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalSV"
+        android:layout_below="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/light_sea_green"
+                android:text="Sakit Mata"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                tools:ignore="TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/sea_green"
+                android:text="Paru Paru"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                tools:ignore="TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/medium_sea_green"
+                android:text="Kulit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                tools:ignore="TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/dark_sea_green"
+                android:text="Organ Dalam"
+                android:textAllCaps="false"
+                android:textColor="#424242" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/forest_green"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:text="Gigi"
+                />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textview43"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontalSV"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/dokter_teratas"
+        android:textColor="@color/greenngulik"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/textview43"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:cardBackgroundColor="@color/white_smoke"
+                    app:cardCornerRadius="11dp"
+                    app:cardElevation="1dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:src="@drawable/doc_1"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/dr_tahrir_thariq"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="82dp"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="96dp"
+                        android:layout_marginTop="40dp"
+                        android:text="@string/ahli_jantung"
+                        android:textSize="15sp"
+                        tools:layout_editor_absoluteX="82dp"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="96dp"
+                        android:layout_marginTop="62dp"
+                        android:text="@string/_10_am_2_pm"
+                        android:textSize="15sp"
+                        tools:layout_editor_absoluteX="82dp"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="134dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="70dp"
+                        android:background="@drawable/splash_button_background_ngulikfromyt"
+                        android:text="Konsultasi"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/cardview1"
+                    android:layout_marginTop="30dp"
+                    app:cardBackgroundColor="@color/white_smoke"
+                    app:cardCornerRadius="11dp"
+                    app:cardElevation="1dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:src="@drawable/doc_2"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/dr_teman_saya"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="82dp"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="96dp"
+                        android:layout_marginTop="40dp"
+                        android:text="@string/general_practitioner"
+                        android:textSize="15sp"
+                        tools:layout_editor_absoluteX="82dp"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="96dp"
+                        android:layout_marginTop="62dp"
+                        android:text="@string/_12_am_9_pm"
+                        android:textSize="15sp"
+                        tools:layout_editor_absoluteX="82dp"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="134dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="70dp"
+                        android:background="@drawable/splash_button_background_ngulikfromyt"
+                        android:text="Konsultasi"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/cardview2"
+                    android:layout_marginTop="30dp"
+                    app:cardBackgroundColor="@color/white_smoke"
+                    app:cardCornerRadius="11dp"
+                    app:cardElevation="1dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:src="@drawable/doc_3"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/dr_toshiba"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="82dp"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="96dp"
+                        android:layout_marginTop="40dp"
+                        android:text="@string/pulmonologist"
+                        android:textSize="15sp"
+                        tools:layout_editor_absoluteX="82dp"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="96dp"
+                        android:layout_marginTop="62dp"
+                        android:text="@string/_13_am_2_pm"
+                        android:textSize="15sp"
+                        tools:layout_editor_absoluteX="82dp"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="134dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="70dp"
+                        android:background="@drawable/splash_button_background_ngulikfromyt"
+                        android:text="Konsultasi"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/cardview3"
+                    android:layout_marginTop="30dp"
+                    app:cardBackgroundColor="@color/white_smoke"
+                    app:cardCornerRadius="11dp"
+                    app:cardElevation="1dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:src="@drawable/doc4"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/dr_normal"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="82dp"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="96dp"
+                        android:layout_marginTop="40dp"
+                        android:text="@string/india"
+                        android:textSize="15sp"
+                        tools:layout_editor_absoluteX="82dp"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="96dp"
+                        android:layout_marginTop="62dp"
+                        android:text="@string/_7_am_12_pm"
+                        android:textSize="15sp"
+                        tools:layout_editor_absoluteX="82dp"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="134dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="70dp"
+                        android:background="@drawable/splash_button_background_ngulikfromyt"
+                        android:text="Konsultasi"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

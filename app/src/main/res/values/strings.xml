@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Medical Care</string>
+    <string name="nav_open">Open Navigation</string>
+    <string name="nav_close">Close Navigation</string>
+    <string name="login">Login</string>
+    <string name="home">home</string>
+    <string name="alarm">Alarm\n</string>
+    <string name="bread">setting\n</string>
+    <string name="Setting">Setting</string>
+    <string name="Monitor">Monitor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login2">Login</string>
+    <string name="masukkan_email_anda">Masukkan Email anda</string>
+    <string name="masukkan_password_anda">Masukkan Password anda</string>
+    <string name="lupa_password_pulih_password_anda">Lupa Password? Pulih Password anda</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="or_login_with">Or Login with</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="silahkan_login">Silahkan Login</string>
+    <string name="gambardiLogin">" "</string>
+    <string name="Pengajuan">Pengajuan\n</string>
+    <string name="Home">Home</string>
+    <string name="Pesan">Pesan\n</string>
+    <string name="HealthCare">Health Care</string>
+    <string name="ubah_profile">Ubah profile</string>
+    <string name="tahrir_thariq_alfathan">Tahrir Thariq Alfathan</string>
+    <string name="master">Master</string>
+    <string name="history">History</string>
+    <string name="setting">Setting</string>
+    <string name="about">About</string>
+    <string name="_085210255368">085210255368</string>
+    <string name="change">change</string>
+    <string name="nomor_hp">Nomor HP</string>
+    <string name="dokter_teratas">Dokter Teratas</string>
+    <string name="kategori">Kategori</string>
+    <string name="_12_am_9_pm">12 am - 9 pm</string>
+    <string name="_10_am_2_pm">10 am - 2 pm</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="general_practitioner">General Practitioner</string>
+    <string name="cari_dokter_anda">Cari Dokter anda</string>
+    <string name="_4">4</string>
+    <string name="_7_am_12_pm">7 am - 12 pm</string>
+    <string name="dr_toshiba">Dr. Toshiba</string>
+    <string name="india">India</string>
+    <string name="_13_am_2_pm">13 am - 2 pm</string>
+    <string name="dr_teman_saya">Dr. Teman Saya</string>
+    <string name="dr_tahrir_thariq">Dr. Tahrir Thariq</string>
+    <string name="pulmonologist">Pulmonologist</string>
+    <string name="ahli_jantung">Ahli Jantung</string>
+    <string name="dr_normal">Dr. Normal</string>
+    <string name="mari_mencari_spesialis_anda">Mari mencari Spesialis Anda</string>
+
+    <string-array name="numbers">
+        <item>Tahrir Thariq Alfathan</item>
+        <item>7708210032</item>
+        <item>D4SM-45-03</item>
+        <item>Tugas Assesment 1 PPBM</item>
+        <item>Universitas Telkom</item>
+    </string-array>
+</resources>
